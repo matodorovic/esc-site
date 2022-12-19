@@ -4,11 +4,11 @@ html {
 
 body {
   background-color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
-.header {
+header {
   background-color: #011827;
   padding: 10px;
   text-align: left;
@@ -17,15 +17,16 @@ body {
   flex-direction: row;
 }
 
-.header h1 {
-  margin-top: 0;
-  padding-top: 2.2rem;
-  clear: both;
-}
-
-.header img {
+header img {
+  width: 128px;
+  height: 82px;
   float: left;
   margin-right: 10px;
+}
+
+header h1 {
+  margin-top: 0;
+  padding-top: 2rem;
 }
 
 .menu {
@@ -33,13 +34,17 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .header {
+  header {
     height: fit-content;
-    position: relative;
+    padding: 1rem;
   }
 
-  .header h1 {
+  header h1 {
+    padding-top: 0.3rem;
     font-size: 1.2rem;
+    box-sizing: content-box;
+    max-width: 1rem;
+    height: fit-content;
   }
 
   .menu {
@@ -55,14 +60,13 @@ body {
 
   .menuDiv {
     box-sizing: border-box;
-    width: 95vw;
-    margin-right: 10px;
-    height: 95vh;
+    width: 96vw;
+    height: 96vh;
     background-color: #011827;
     margin-left: auto;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
-    box-shadow: 1rem 1rem 1rem 1rem white;
+    box-shadow: 1rem 1rem 1rem 1.2rem white;
     animation-name: showMenu;
     animation-duration: 0.2s;
   }
@@ -71,9 +75,11 @@ body {
     0% {
       opacity: 0;
     }
+
     50% {
       opacity: 0.5;
     }
+
     100% {
       opacity: 1;
     }
@@ -83,8 +89,7 @@ body {
     font-size: 2rem;
     float: right;
     margin: 1rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
   .menuListStyle {
@@ -131,7 +136,7 @@ body {
 }
 
 .navi:hover {
-  color: #8acfe5;
+  color: #8ACFE5;
 }
 
 .hero {
@@ -145,9 +150,14 @@ body {
   margin-bottom: 0;
 }
 
+.heroimg img {
+  width: 100%;
+  height: 80%;
+}
+
 .btn1 {
   display: inline-block;
-  background-color: #e3170a;
+  background-color: #E3170A;
   box-sizing: border-box;
   height: 66px;
   width: 308px;
@@ -162,7 +172,7 @@ body {
 
 .btn2 {
   display: inline-block;
-  background-color: #8acfe5;
+  background-color: #8ACFE5;
   box-sizing: border-box;
   height: 66px;
   width: 308px;
@@ -175,7 +185,7 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 800px) {
   .btn1 {
     margin-top: -40px;
   }
@@ -185,16 +195,31 @@ body {
   }
 }
 
-@media screen and (max-width: 660px) {
-  .btn1 {
-    font-size: 1.2rem;
+@media screen and (max-width: 800px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
   }
 
-  .btn2 {
+  .hero img {
+    order: 1;
+  }
+
+  .btn1 {
     background-color: white;
     color: blue;
     text-decoration: underline;
     font-size: 0.9rem;
+    order: 3;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .btn2 {
+    font-size: 1.2rem;
+    order: 2;
+    margin: auto;
+    margin-top: 2rem;
   }
 }
 
@@ -234,32 +259,14 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .comment1 {
-    margin-right: 0;
-    font-size: 0.9rem;
-  }
-
-  .comment2 {
-    margin-right: 0;
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 660px) {
   .comments {
-    margin-left: 0.9rem;
+    margin: auto;
   }
 
   .comment1 {
-    margin-right: 0.6rem;
-    margin-left: 0.9rem;
-    font-size: 0.9rem;
-    box-sizing: border-box;
-    width: 95vw;
-  }
-
-  .comment1 p {
-    width: 95vw;
+    padding-top: 2rem;
+    margin: auto;
+    padding-bottom: 5rem;
   }
 
   .comment2 {
@@ -318,20 +325,17 @@ body {
 }
 
 .card {
-  box-sizing: border-box;
-  height: 446px;
-  width: 363px;
   margin: 10px;
   text-align: center;
   background-color: white;
   display: inline-block;
   box-shadow: 0 0 5px lightgray;
-  border-radius: 8px;
+  border-radius: 1rem;
 }
 
 .card img {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .cardtitle {
@@ -345,7 +349,7 @@ body {
 .users {
   font-size: 0.7em;
   text-align: right;
-  margin-right: 10px;
+  margin-right: 10px
 }
 
 .cardtext {
@@ -356,13 +360,9 @@ body {
   text-align: left;
 }
 
-.cards {
-    display: flex;
-    justify-content: left;
-    overflow-x: scroll;
-}
-
 @media screen and (max-width: 800px) {
+  
+
   .card-inside-link {
     margin-top: 8px;
   }
@@ -376,6 +376,12 @@ body {
     margin-top: 10px;
   }
 
+  .cards {
+    display: flex;
+    justify-content: left;
+    overflow-x: scroll;
+  }
+
   .card {
     flex: none;
     width: 80%;
@@ -386,8 +392,13 @@ body {
   }
 }
 
+.cardimg {
+  width: 100%;
+  height: 30%;
+}
+
 .card-inside-link {
-  background-color: #e3170a;
+  background-color: #E3170A;
   color: white;
   font-weight: bold;
   display: block;
@@ -406,7 +417,7 @@ body {
 .cardboxlink1 {
   margin: 100px;
   display: inline-block;
-  background-color: #e3170a;
+  background-color: #E3170A;
   box-sizing: border-box;
   height: 66px;
   width: 308px;
@@ -422,7 +433,7 @@ body {
 .cardboxlink2 {
   margin: 100px;
   display: inline-block;
-  background-color: #8acfe5;
+  background-color: #8ACFE5;
   box-sizing: border-box;
   height: 66px;
   width: 308px;
@@ -455,7 +466,7 @@ body {
 .storylink {
   display: inline-block;
   margin-top: 20px;
-  border: solid #8acfe5;
+  border: solid #8ACFE5;
   box-sizing: border-box;
   height: 66px;
   width: 308px;
@@ -463,22 +474,18 @@ body {
   padding: 18px;
   font-weight: bold;
   border-radius: 4px;
+  ;
 }
 
 .text-with-img {
-    margin-bottom: 4rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-
+  display: block;
 }
 
 .img1text img {
   float: left;
   width: 50%;
   height: 100%;
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .img1text {
@@ -493,7 +500,7 @@ body {
 }
 
 .img1link {
-  background-color: #e3170a;
+  background-color: #E3170A;
   color: white;
   font-weight: bold;
   display: inline;
@@ -526,7 +533,7 @@ body {
 }
 
 .img2link {
-  background-color: #e3170a;
+  background-color: #E3170A;
   color: white;
   font-weight: bold;
   display: inline;
@@ -590,6 +597,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
 }
 
 @media screen and (max-width: 800px) {
@@ -599,11 +607,6 @@ body {
     padding-top: 10px;
     margin-top: 10px;
   }
-}
-
-.social-link {
-    text-decoration: none;
-    color: white;
 }
 
 .footerinfo {
