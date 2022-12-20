@@ -1,5 +1,5 @@
 html {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 body {
@@ -145,9 +145,7 @@ header h1 {
 }
 
 .heroimg {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 0;
+  margin-bottom: -0.6rem;
 }
 
 .heroimg img {
@@ -161,9 +159,9 @@ header h1 {
   box-sizing: border-box;
   height: 66px;
   width: 308px;
-  text-align: center;
-  margin: 10px;
-  padding: 20px;
+  text-align:center;
+  margin: 1rem;
+  padding: 1rem;
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
@@ -177,8 +175,8 @@ header h1 {
   height: 66px;
   width: 308px;
   text-align: center;
-  margin: 10px;
-  padding: 20px;
+  margin: 1rem;
+  padding: 1rem;
   color: black;
   font-weight: bold;
   font-size: 1.3rem;
@@ -224,10 +222,11 @@ header h1 {
 }
 
 .comments {
+  margin-bottom: 4rem;
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   box-sizing: border-box;
   width: 100%;
   margin-top: 2rem;
@@ -254,8 +253,7 @@ header h1 {
 .comment1 img {
   float: left;
   margin-right: 10px;
-  height: 70%;
-  width: 5rem;
+  padding-top: 1rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -306,8 +304,7 @@ header h1 {
 .comment2 img {
   float: left;
   margin-right: 10px;
-  height: 70%;
-  width: 5rem;
+  padding-top: 1rem;
 }
 
 .cardbox {
@@ -318,14 +315,21 @@ header h1 {
 
 .cardboxtitle {
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 10px;
+  margin: auto;
+  padding: 1rem;
   text-align: center;
   font-size: 36px;
+  padding-bottom: 3rem;
+}
+
+.cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .card {
-  margin: 10px;
+  margin: 1rem;
   text-align: center;
   background-color: white;
   display: inline-block;
@@ -421,15 +425,20 @@ header h1 {
   font-weight: bold;
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
   box-sizing: border-box;
-  height: 40px;
-  width: 170px;
+  height: 60px;
+  width: 190px;
   float: right;
-  margin-top: 10px;
+  margin-top: 1rem;
   margin-bottom: 10px;
   margin-right: 20px;
   border-radius: 4px;
+}
+
+.links {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .cardboxlink1 {
@@ -496,6 +505,13 @@ header h1 {
   color: white;
   text-align: center;
   padding-top: 100px;
+}
+
+.story p {
+  max-width: 50ch;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .storylink {
