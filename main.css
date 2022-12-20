@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 body {
@@ -41,7 +41,7 @@ header h1 {
 
   header h1 {
     padding-top: 0.3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     box-sizing: content-box;
     max-width: 1rem;
     height: fit-content;
@@ -207,7 +207,7 @@ header h1 {
 
   .btn1 {
     background-color: white;
-    color: blue;
+    color: #36769D;
     text-decoration: underline;
     font-size: 0.9rem;
     order: 3;
@@ -336,14 +336,24 @@ header h1 {
 .card img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  float: left;
 }
 
 .cardtitle {
+  clear: both;
   display: block;
+  padding-top: 1rem;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 1rem;
   text-align: left;
-  padding-left: 10px;
+}
+
+.stars {
+  padding-left: 1rem;;
+}
+
+.stars img {
+  padding-right: 0.3rem;
 }
 
 .users {
@@ -356,12 +366,13 @@ header h1 {
   clear: both;
   display: block;
   font-size: 0.8em;
-  padding: 10px;
+  padding: 1rem;
+  padding-left: 1rem;
   text-align: left;
+  max-width: 40ch;
 }
 
 @media screen and (max-width: 800px) {
-  
 
   .card-inside-link {
     margin-top: 8px;
@@ -384,11 +395,18 @@ header h1 {
 
   .card {
     flex: none;
-    width: 80%;
+    width: 75%;
+  }
+
+  .users {
+    float: left;
+    margin-left: 1rem;
+    margin-top: -0.05em;
   }
 
   .card-inside-link {
     width: fit-content;
+    margin: auto;
   }
 }
 
@@ -447,11 +465,28 @@ header h1 {
 }
 
 @media screen and (max-width: 660px) {
-  .cardboxlink2 {
+
+  .links {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .cardboxlink2{
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+
+  .cardboxlink1 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     background-color: white;
-    color: blue;
+    color: #36769D;
     text-decoration: underline;
     font-size: 0.9rem;
+    margin: auto;
   }
 }
 
@@ -467,6 +502,7 @@ header h1 {
   display: inline-block;
   margin-top: 20px;
   border: solid #8ACFE5;
+  color: #8ACFE5;
   box-sizing: border-box;
   height: 66px;
   width: 308px;
@@ -474,7 +510,6 @@ header h1 {
   padding: 18px;
   font-weight: bold;
   border-radius: 4px;
-  ;
 }
 
 .text-with-img {
@@ -547,6 +582,12 @@ header h1 {
 }
 
 @media screen and (max-width: 800px) {
+  .story p {
+    margin: auto;
+    max-width: 40ch;
+    padding-bottom: 1.5rem;
+  }
+
   .text-with-img {
     display: block;
     clear: both;
@@ -559,16 +600,36 @@ header h1 {
     margin-left: 0;
     padding-left: 0;
     margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .img1text h1 {
+    font-weight: 400;
+  }
+
+  .img1text p {
+    max-width: 40ch;
+    margin: 2.5rem;
+    text-align: left;
   }
 
   .img1text {
+    margin-top: -0.8rem; 
     display: block;
     padding: 0;
   }
 
   .img1link {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    display: block;
+    box-sizing: border-box;
+    height: 66px;
+    width: 308px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    margin: 2rem;
   }
 
   .img2text img {
@@ -577,16 +638,37 @@ header h1 {
     width: 100%;
     margin-left: 0;
     padding-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .img2text h1 {
+    font-weight: 400;
+  }
+
+  .img2text p {
+    max-width: 40ch;
+    margin: 2.5rem;
   }
 
   .img2text {
     display: block;
     padding: 0;
+    text-align: left;
+    margin-bottom: 3rem;
   }
 
   .img2link {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    display: block;
+    box-sizing: border-box;
+    height: 66px;
+    width: 308px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    margin: 2rem;
   }
 }
 
@@ -595,18 +677,9 @@ header h1 {
   background-color: #011827;
   color: white;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
-
-}
-
-@media screen and (max-width: 800px) {
-  .footer {
-    display: block;
-    text-align: center;
-    padding-top: 10px;
-    margin-top: 10px;
-  }
 }
 
 .footerinfo {
@@ -620,4 +693,32 @@ header h1 {
   flex-grow: 1;
   text-align: left;
   margin: 10px;
+}
+
+.footerinfo a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .footerinfo {
+    padding-top: 0.5rem;
+    width: fit-content;
+    max-width: 40ch;
+    height: fit-content;
+  }
+
+  .footerinfo li {
+    list-style-type: none;
+    text-align: left;
+    margin-left: -2rem;
+  }
 }
