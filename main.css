@@ -246,7 +246,7 @@ header h1 {
 .comment1 cite {
   font-style: italic;
   font-size: 0.8em;
-  padding-left: auto;
+  padding-left: 4rem;
 }
 
 .comment1 img {
@@ -280,7 +280,6 @@ header h1 {
 
   .comment2 p {
     display: none;
-
   }
 
   .comment2 cite {
@@ -300,13 +299,13 @@ header h1 {
 
 .comment2 p {
   font-style: italic;
-  width: 400px;
+  width: 40ch;
 }
 
 .comment2 cite {
   font-style: italic;
   font-size: 0.8em;
-  padding-left: 6rem;
+  padding-left: 4rem;
 }
 
 .comment2 img {
@@ -381,7 +380,6 @@ header h1 {
   padding: 1rem;
   padding-left: 1rem;
   text-align: left;
-  max-width: 40ch;
 }
 
 @media screen and (max-width: 800px) {
@@ -414,6 +412,10 @@ header h1 {
     float: left;
     margin-left: 1rem;
     margin-top: -0.05em;
+  }
+
+  .cardtext {
+    max-width: 40ch;
   }
 
   .card-inside-link {
