@@ -241,18 +241,19 @@ header h1 {
 .comment1 p {
   font-style: italic;
   width: 40ch;
+  padding-left: rem;
 }
 
 .comment1 cite {
   font-style: italic;
   font-size: 0.8em;
-  padding-left: 4rem;
+  padding-left: 5rem;
 }
 
 .comment1 img {
   float: left;
-  margin-right: 10px;
-  padding-top: 1rem;
+  margin-right: 1rem;
+  padding-top: 0.7rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -271,7 +272,7 @@ header h1 {
   }
 
   .comment1 cite {
-    margin: auto;
+    padding-left: 0;
   }
 
   .comment2 {
@@ -305,13 +306,13 @@ header h1 {
 .comment2 cite {
   font-style: italic;
   font-size: 0.8em;
-  padding-left: 4rem;
+  padding-left: 5rem;
 }
 
 .comment2 img {
   float: left;
-  margin-right: 10px;
-  padding-top: 1rem;
+  margin-right: 1rem;
+  padding-top: 0.7rem;
 }
 
 .cardbox {
