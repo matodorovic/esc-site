@@ -1,5 +1,5 @@
 html {
-  font-size: 22px;
+  font-size: 1.4rem;
 }
 
 body {
@@ -34,6 +34,9 @@ header h1 {
 }
 
 @media screen and (max-width: 800px) {
+  html {
+    font-size: 1.rem;
+  }
   header {
     height: fit-content;
     padding: 1rem;
@@ -237,13 +240,13 @@ header h1 {
 
 .comment1 p {
   font-style: italic;
-  width: 400px;
+  width: 40ch;
 }
 
 .comment1 cite {
   font-style: italic;
   font-size: 0.8em;
-  padding-left: 6rem;
+  padding-left: auto;
 }
 
 .comment1 img {
@@ -264,10 +267,11 @@ header h1 {
     padding-top: 2rem;
     margin: auto;
     padding-bottom: 5rem;
+    font-size: large;
   }
 
   .comment1 cite {
-    padding-left: 5rem;
+    margin: auto;
   }
 
   .comment2 {
@@ -276,6 +280,7 @@ header h1 {
 
   .comment2 p {
     display: none;
+
   }
 
   .comment2 cite {
@@ -352,6 +357,7 @@ header h1 {
   margin-top: 10px;
   margin-left: 1rem;
   text-align: left;
+  font-size:larger;
 }
 
 .stars {
@@ -427,7 +433,7 @@ header h1 {
   font-weight: bold;
   display: block;
   text-align: center;
-  padding: 1rem;
+  padding: 0.8rem;
   box-sizing: border-box;
   height: 65px;
   width: fit-content;
